@@ -17,12 +17,12 @@ public class AreaofTriangle {
 		
 		int a,b,c;
 		double s,area;
-		Scanner sc=new Scanner(System.in);
+		Scanner sc1=new Scanner(System.in);
 		System.out.println("Enter 3 sidesof triangle ");
 		
-		a=sc.nextInt();
-		b=sc.nextInt();
-		c=sc.nextInt();
+		a=sc1.nextInt();
+		b=sc1.nextInt();
+		c=sc1.nextInt();
 		
 		s = (a+b+c)/2f;
 		
