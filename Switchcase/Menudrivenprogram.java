@@ -21,7 +21,7 @@ public class Menudrivenprogram {
 		
 		System.out.println("Enter the option");
 		String option = sc.nextLine();
-		option=option.toUpperCase();
+		//option=option.toUpperCase();
 		
 		switch(option) {
 		case "ADD":System.out.println("Sum is : "+(x+y));
