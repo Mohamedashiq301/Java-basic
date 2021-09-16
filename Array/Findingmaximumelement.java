@@ -11,10 +11,8 @@ public class Findingmaximumelement {
 			if (A[i]>max)
 			{
 				max=A[i];
-			
 			}
-		
-		System.out.println(max);
 		}
+		System.out.println(max);
 	}
 }
