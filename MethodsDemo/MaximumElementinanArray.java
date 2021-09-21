@@ -1,31 +1,25 @@
 package MethodsDemo;
 
 public class MaximumElementinanArray {
-	
-	static int find (int a)
+	static String name ="Ashiq";
+	static int find (int [] a)
 	{
-		for (int i=0;i<a;i++)
+		int max=0;
+		System.out.println(name);
+		for (int i=0;i<a.length;i++)
 		{
-		int max=a;
-		if (a>max)
-				max=a;
+			max=a[i];
+		if (a[i]>max)
+				max=a[i];
 		}
-		return a;
+		return max;
 	}
 	public static void main(String[] args) {
-		int A[]=new int [10];
-			A[0]=3;
-			A[1]=6;
-			A[2]=9;
-			A[3]=12;
-			A[4]=13;
-			A[5]=15;
-			A[6]=4;
-			A[7]=1;
-			A[8]=8;
-			A[9]=10;
-		for (int i=0;i<A.length;i++)
-			System.out.print(A.length);
-		//System.out.println(find(a));
+		int A[]= {2,4,5,6,7,9,10,12,15};
+			
+		//for (int i=0;i<A.length;i++)
+			
+		System.out.println(find(A));
+		System.out.println(name);
 	}
 }

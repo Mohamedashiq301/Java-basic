@@ -9,7 +9,7 @@ public class Searchingforanelement {
 		
 		System.out.println("Enter a number");
 		int key=sc.nextInt();
-		
+		sc.close();
 		int A[]= {3,9,7,8,12,6,15,5,4,10};
 		
 		for (int i=0;i<A.length;i++)
