@@ -1,0 +1,11 @@
+import java.lang.*;
+
+Public static void main (String []args)
+{
+	double s=0;
+	for(int i=0;i<args.length;i++)
+	{
+	s=s+Double.parseDouble(i);
+	}
+	System.out.println(s);
+}

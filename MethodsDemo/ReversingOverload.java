@@ -24,16 +24,7 @@ public class ReversingOverload {
 		
 		return B;
 	}
-	static int[] reverse (String A)
-	{
-		int B[]=new int [A.length];
-		
-		for(int i=A.length-1,j=0;i>=0;i--,j++)
-		
-			B[j]=A[i];
-		
-		return B;
-	}
+	
 	public static void main(String[] args) {
 		//Scanner sc=new Scanner(System.in);
 		//System.out.println("Enter a number");
