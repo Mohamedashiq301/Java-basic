@@ -10,7 +10,7 @@ class Parent1
 		System.out.println("Param Parent Constructor");
 	}
 }
-class Children
+class Children extends Parent1
 {
 	public Children()
 	{
@@ -24,6 +24,7 @@ class Children
 public class ParameterizedConstructor {
 
 	public static void main(String[] args) {
-		
+		Parent1 p1=new Children();
+		p1.getClass();
 	}
 }
