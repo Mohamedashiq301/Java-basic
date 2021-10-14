@@ -35,5 +35,6 @@ public class Displayday {
 		else {
 			System.out.println("The day number is invalid");
 		}
+		scan5.close();
 		}
 }
