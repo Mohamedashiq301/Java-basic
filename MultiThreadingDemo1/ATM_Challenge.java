@@ -2,11 +2,10 @@ package MultiThreadingDemo1;
 
 class ATM
 {
-	void checkBalance(String name)
+	synchronized void checkBalance(String name)
 	{
-		synchronized(this)
-		{
-		System.out.println(name+" Balance");
+		
+		System.out.print(name+" Checking");
 		try
 		{
 			Thread.sleep(1000);
@@ -15,14 +14,12 @@ class ATM
 		{
 			
 		}
-		}
-		//System.out.println("Balance");
+		
+		System.out.println(" Balance");
 	}
-	public void Withdraw(String name, int amount)
+	synchronized void Withdraw(String name, int amount)
 	{
-		synchronized(this)
-		{
-		System.out.println(name+", "+amount+", "+"Amount withdraw");
+		System.out.print(name+", "+"Withdrawing ");
 		try
 		{
 			Thread.sleep(1000);
@@ -31,8 +28,8 @@ class ATM
 		{
 			
 		}
-		}
-		//System.out.println("Withdraw");
+		
+		System.out.println(amount);
 	}
 }
 class Customer extends Thread
