@@ -17,7 +17,7 @@ public class StringTokenizerDemo1 {
 		
 		StringTokenizer stk1=new StringTokenizer(s);
 		
-		while(stk1.hasMoreTokens());
+		while(stk1.hasMoreTokens())
 		{
 			s=stk1.nextToken();
 			System.out.println(s);
